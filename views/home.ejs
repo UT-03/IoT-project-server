@@ -1,0 +1,46 @@
+<%- include('./includes/head.ejs') %>
+    <title>Hello</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col xs-12 lg-6 p-5 pt-3">
+                    <h1 class='display-6'>Query post</h1>
+                    <form>
+                        <div class="mb-3">
+                            <label for="author-query" class="form-label">Author</label>
+                            <input type="text" class="form-control" id="author-query">
+                        </div>
+                        <div class="mb-3">
+                            <label for="post-title-query" class="form-label">Post Title</label>
+                            <input type="text" class="form-control" id="post-title-query">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Query</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row mb-5 justify-content-center">
+                <div class="col xs-12 lg-6 p-5 pt-3">
+                    <h1 class='display-6'>Add a new post</h1>
+                    <form>
+                        <div class="mb-3">
+                            <label for="author-add" class="form-label">Author name</label>
+                            <input type="text" class="form-control" id="author-add">
+                        </div>
+                        <div class="mb-3">
+                            <label for="title-add" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title-add">
+                        </div>
+                        <div class="mb-3">
+                            <label for="body-add" class="form-label">Body</label>
+                            <textarea type="text" class="form-control" id="body-add"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./includes/end.ejs') %>
